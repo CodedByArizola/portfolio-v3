@@ -7,7 +7,7 @@ export const contactAPIRoute = 'https://api.web3forms.com/submit';
 export const socialMediaLinks: SocialPlatform[] = [
     {
         name: 'GitHub',
-        link: 'https://github.com/GhostDaGhost/'
+        link: 'https://github.com/CodedByArizola/'
     },
     {
         name: 'Instagram',
@@ -56,7 +56,7 @@ export const listOfProjects: SoftwareProject[] = [
         image: 'adrianas-bowtique.png',
         featured: true,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/adriana_bowtique',
+        githubLink: 'https://github.com/CodedByArizola/adriana_bowtique',
         siteLink: 'https://adrianas-bowtique.netlify.app/'
     },
     {
@@ -65,7 +65,7 @@ export const listOfProjects: SoftwareProject[] = [
         image: 'github_userlookup.png',
         featured: true,
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/github_userlookup',
+        githubLink: 'https://github.com/CodedByArizola/github_userlookup',
         siteLink: 'https://clever-wisp-aa80d7.netlify.app/'
     },
     {
@@ -74,7 +74,7 @@ export const listOfProjects: SoftwareProject[] = [
         image: 'movieinfoapp.png',
         featured: true,
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/movieinfoapp',
+        githubLink: 'https://github.com/CodedByArizola/movieinfoapp',
         siteLink: 'https://zippy-cat-24ae8d.netlify.app/'
     },
     {
@@ -83,7 +83,7 @@ export const listOfProjects: SoftwareProject[] = [
         image: 'aa-linktree-v2.png',
         featured: true,
         toolsUsed: ['Vue.js', 'Vuetify', 'Vite', 'Cascading Style Sheets'],
-        githubLink: 'https://github.com/GhostDaGhost/linktree-v2',
+        githubLink: 'https://github.com/CodedByArizola/linktree-v2',
         siteLink: 'https://aa-linktree-v2.netlify.app/'
     },
     {
@@ -105,7 +105,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'The third version of my personal portfolio. This is what you are looking at right now!',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/portfolio-v3',
+        githubLink: 'https://github.com/CodedByArizola/portfolio-v3',
         siteLink: 'https://aa-portfolio-v3.netlify.app/'
     },
     {
@@ -113,7 +113,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A tool to look up a region for the current climate statistics. Statistics include temperature, pressure, humidity, wind speed/direction and more! This was also my very first Vue.js project!',
         featured: false,
         toolsUsed: ['Vue.js', 'TypeScript', 'Vite', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/weatherapp',
+        githubLink: 'https://github.com/CodedByArizola/weatherapp',
         siteLink: 'https://dainty-tapioca-dbc275.netlify.app/'
     },
     {
@@ -128,7 +128,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A minigame representing the famous hand game called "Rock, Paper, Scissors". This is the first project I\'ve utilized Tailwind CSS.',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Tailwind CSS'],
-        githubLink: 'https://github.com/GhostDaGhost/rock-paper-scissors',
+        githubLink: 'https://github.com/CodedByArizola/rock-paper-scissors',
         siteLink: 'https://aa-rock-paper-scissors.netlify.app/'
     },
     {
@@ -136,7 +136,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A website that prompts the user to enter the description of an image. Once a description is set, AI generates it.',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Less'],
-        githubLink: 'https://github.com/GhostDaGhost/ai-image-generator',
+        githubLink: 'https://github.com/CodedByArizola/ai-image-generator',
         siteLink: 'https://aa-ai-image-generator.netlify.app/'
     },
     {
@@ -144,7 +144,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A simple QR code generator for any text or link.',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/qr-code-generator',
+        githubLink: 'https://github.com/CodedByArizola/qr-code-generator',
         siteLink: 'https://aa-qrcodegenerator.netlify.app/'
     },
     {
@@ -152,7 +152,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A quick and easy coin flipper to get either heads or tails!',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Cascading Style Sheets', 'Vite'],
-        githubLink: 'https://github.com/GhostDaGhost/flip-a-coin',
+        githubLink: 'https://github.com/CodedByArizola/flip-a-coin',
         siteLink: 'https://aa-flipacoin.netlify.app/'
     },
     {
@@ -160,7 +160,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A tool to generate a password! It gives the options for various factors to play into the generation such as numbers or symbols.',
         featured: false,
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Less'],
-        githubLink: 'https://github.com/GhostDaGhost/password_generator',
+        githubLink: 'https://github.com/CodedByArizola/password_generator',
         siteLink: 'https://sparkly-kelpie-d89b5d.netlify.app/'
     },
     {
@@ -168,7 +168,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A tool to get the exchange rate of an amount of money in one currency to another.',
         featured: false,
         toolsUsed: ['React.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/currency_converter',
+        githubLink: 'https://github.com/CodedByArizola/currency_converter',
         siteLink: 'https://classy-choux-2958bf.netlify.app/'
     },
     {
@@ -176,7 +176,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A tool to shorten long URLs to shorter URLs.',
         featured: false,
         toolsUsed: ['Svelte', 'TypeScript', 'Vite', 'Less'],
-        githubLink: 'https://github.com/GhostDaGhost/url_shortener',
+        githubLink: 'https://github.com/CodedByArizola/url_shortener',
         siteLink: 'https://transcendent-palmier-9cc6ea.netlify.app/'
     },
     {
@@ -184,7 +184,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'A form for users to send their contact details and a message to my email!',
         featured: false,
         toolsUsed: ['React.js', 'Bootstrap', 'TypeScript', 'Vite', 'Less'],
-        githubLink: 'https://github.com/GhostDaGhost/contactme',
+        githubLink: 'https://github.com/CodedByArizola/contactme',
         siteLink: 'https://sparkly-swan-b4f0e8.netlify.app/'
     },
     {
@@ -192,7 +192,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'The first version of a tree of my social media links.',
         featured: false,
         toolsUsed: ['Vue.js', 'Sass'],
-        githubLink: 'https://github.com/GhostDaGhost/linktree',
+        githubLink: 'https://github.com/CodedByArizola/linktree',
         siteLink: 'https://aa-linktree-v1.netlify.app/'
     },
     {
@@ -200,7 +200,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'This is a program that will record temperatures of each day of the week per user\'s input as well as display the coldest and warmest day. It will also summon a bar chart with the temperature values.',
         featured: false,
         toolsUsed: ['Python'],
-        githubLink: 'https://github.com/GhostDaGhost/linktree'
+        githubLink: 'https://github.com/CodedByArizola/linktree'
     },
     {
         title: 'Mock Mobile Data Terminal for FiveM',
@@ -221,7 +221,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'The second version of my personal portfolio.',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Cascading Style Sheets'],
-        githubLink: 'https://github.com/GhostDaGhost/portfolio',
+        githubLink: 'https://github.com/CodedByArizola/portfolio',
         siteLink: 'https://aa-portfolio-v2.netlify.app/'
     },
     {
@@ -229,7 +229,7 @@ export const listOfProjects: SoftwareProject[] = [
         description: 'The very first version of my personal portfolio. This is as well as my first project in web development.',
         featured: false,
         toolsUsed: ['HTML', 'Cascading Style Sheets'],
-        githubLink: 'https://github.com/GhostDaGhost/portfolio-old',
+        githubLink: 'https://github.com/CodedByArizola/portfolio-old',
         siteLink: 'https://aa-portfolio-v1.netlify.app/'
     }
 ];
