@@ -27,7 +27,7 @@ export const socialMediaLinks: SocialPlatform[] = [
     },
     {
         name: 'Resume',
-        link: 'https://resume.alexarizola.dev/'
+        link: 'https://codedbyarizola.github.io/'
     }
 ];
 
