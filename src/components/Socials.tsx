@@ -25,7 +25,8 @@ const socialMediaIcons: Record<string, any> = {
     Instagram: <InstagramIcon sx={socialMediaIconStyling} />,
     X: <XIcon sx={socialMediaIconStyling} />,
     LinkedIn: <LinkedInIcon sx={socialMediaIconStyling} />,
-    Email: <EmailIcon sx={socialMediaIconStyling} />
+    Email: <EmailIcon sx={socialMediaIconStyling} />,
+    Resume: <DescriptionIcon sx={socialMediaIconStyling} />
 };
 
 // SOCIALS
@@ -37,10 +38,6 @@ export default () => {
                     {(socialMediaIcons[socialLink.name])}
                 </IconButton>
             ))}
-
-            <IconButton href={new URL(`../assets/resume.pdf`, import.meta.url).href} rel="noopener noreferrer" target="_blank" aria-label="Resume">
-                <DescriptionIcon sx={socialMediaIconStyling} />
-            </IconButton>
         </Box>
     )
 }

@@ -24,6 +24,10 @@ export const socialMediaLinks: SocialPlatform[] = [
     {
         name: 'Email',
         link: 'mailto:contact@alexarizola.dev'
+    },
+    {
+        name: 'Resume',
+        link: 'https://resume.alexarizola.dev/'
     }
 ];
 
