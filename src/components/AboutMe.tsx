@@ -14,7 +14,7 @@ export default () => {
                 <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
                     Hi, my name is Alex.
                     I'm a graduate of North Creek High School and currently an undergraduate at Lake Washington Institute of Technology, pursuing a degree in Computing and Software Development.
-                    My goal is to complete my Associate of Arts and Sciences Transfer degree and continue on to earn my Bachelor's.
+                    My goal is to complete my Associate of Applied Science degree and continue on to earn my Bachelor's.
                     In my free time, I enjoy coding, listening to music, watching sunsets, spending time with my dogs Charlie and Marcie, and staying active at the gym.
                 </Typography>
 
