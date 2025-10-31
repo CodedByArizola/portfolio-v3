@@ -12,11 +12,11 @@ const NonFeaturedProject = (props: NonFeaturedProjectProps) => {
     // RETURN ELEMENT
     return (
         <Card variant="outlined" sx={{ width: 275, p: 3 }}>
-            <Typography variant="h5" color="white" fontFamily="Open Sans" fontWeight={600} gutterBottom>
+            <Typography variant="h5" color="white" fontFamily="purista-web" fontWeight={600} gutterBottom>
                 {title}
             </Typography>
 
-            <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="Open Sans" sx={{ mb: 3 }}>
+            <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="purista-web" sx={{ mb: 3 }}>
                 {description}
             </Typography>
 

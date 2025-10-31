@@ -14,7 +14,7 @@ export default ({ name }: MobileNavigationMenuButtonProps) => {
                     '&:hover': {
                         color: 'var(--main_color2_brighter)'
                     },
-                    fontFamily: 'Open Sans',
+                    fontFamily: 'purista-web',
                     color: 'white',
                     cursor: 'pointer',
                     transition: '.23s',

@@ -82,7 +82,7 @@ const Contact = () => {
             <ReactVisibilitySensor partialVisibility onChange={(isVisible: boolean) => setContainerVisibility(isVisible)}>
                 <Fade in={showContainer} timeout={1000}>
                     <Container maxWidth="xl" sx={{ minHeight: '90vh', py: 2 }}>
-                        <Typography variant="h4" fontFamily="Open Sans" color="white" sx={{ mb: 3 }}>
+                        <Typography variant="h4" fontFamily="purista-web" color="white" sx={{ mb: 3 }}>
                             <Link href="#contact" sx={linkStyling}>#</Link> Contact
                         </Typography>
 

@@ -1,21 +1,12 @@
 import { AppBar, Container, Toolbar, Box, IconButton, Button, Slide } from "@mui/material";
-import { useEffect, useState } from "react";
-
 import { useNavigate } from "react-router-dom";
 import { pages } from "../data/config";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import NavbarLogo from "./NavbarLogo";
 
-// NAVBAR
 export default ({ setMobileNavMenuVisibility }: NavbarProps) => {
     const navigate = useNavigate();
-
-    // SLIDE EFFECT FOR NAVBAR CONTENTS
-    const [showNavbarContents, setNavbarContentsVisibility] = useState(false);
-    useEffect(() => {
-        setTimeout(() => setNavbarContentsVisibility(true), 1000);
-    }, []);
 
     // RETURN ELEMENT
     return (
@@ -36,12 +27,12 @@ export default ({ setMobileNavMenuVisibility }: NavbarProps) => {
                             navigate('/home');
                         }}
                     >
-                        <NavbarLogo imageSize="65" showNavbarContents={showNavbarContents} />
+                        <NavbarLogo imageSize="65" />
                     </Box>
 
                     {/* DESKTOP / LARGE MONITORS */}
                     <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: 'flex-end' }}>
-                        <Slide direction="left" in={showNavbarContents} timeout={650}>
+                        <Slide direction="down" in={true} timeout={650}>
                             <div>
                                 {pages.map(page => (
                                     <Button
@@ -53,7 +44,7 @@ export default ({ setMobileNavMenuVisibility }: NavbarProps) => {
                                                 color: 'var(--main_color2_brighter)'
                                             },
                                             ml: 2,
-                                            fontFamily: 'Open Sans',
+                                            fontFamily: 'purista-web',
                                             fontSize: 19,
                                             textTransform: 'none',
                                             color: "white"
@@ -70,12 +61,12 @@ export default ({ setMobileNavMenuVisibility }: NavbarProps) => {
                     <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, cursor: 'pointer' }} onClick={() => {
                         navigate('/home');
                     }}>
-                        <NavbarLogo imageSize="75" showNavbarContents={showNavbarContents} />
+                        <NavbarLogo imageSize="75" />
                     </Box>
 
                     {/* MOBILE / SMALL MONITORS */}
                     <Box sx={{ display: { xs: "flex", md: "none" } }}>
-                        <Slide direction="left" in={showNavbarContents} timeout={650}>
+                        <Slide direction="down" in={true} timeout={650}>
                             <div>
                                 <IconButton
                                     size="large"

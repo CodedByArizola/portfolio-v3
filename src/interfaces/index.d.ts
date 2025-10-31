@@ -1,22 +1,3 @@
-interface NavbarLogoProps {
-    imageSize: string;
-    showNavbarContents: boolean;
-}
-
-interface TabPanelProps {
-    children?: React.ReactNode;
-    index: number;
-    value: number;
-}
-
-interface TabContainerProps {
-    alignment: string;
-    index: number;
-    onChange: any;
-    tabType: string;
-    children?: React.ReactNode;
-}
-
 interface IntroductionProps {
     showNameAndTitle: boolean;
 }

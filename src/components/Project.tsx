@@ -35,7 +35,7 @@ export default ({ title, description, image, toolsUsed, githubLink, siteLink }: 
                 </Box>
 
                 <Box sx={{ ml: 6, py: 3 }}>
-                    <Typography variant="h5" align="right" color="white" fontFamily="Open Sans" fontWeight={600} gutterBottom>
+                    <Typography variant="h5" align="right" color="white" fontFamily="purista-web" fontWeight={600} gutterBottom>
                         {title}
                     </Typography>
 
@@ -44,7 +44,7 @@ export default ({ title, description, image, toolsUsed, githubLink, siteLink }: 
                         variant="subtitle1"
                         align="right"
                         color="darkgray"
-                        fontFamily="Open Sans"
+                        fontFamily="purista-web"
                         sx={{
                             mb: 2,
                             p: 1,
@@ -78,11 +78,11 @@ export default ({ title, description, image, toolsUsed, githubLink, siteLink }: 
 
             {/* MOBILE / SMALL MONITORS */}
             <Box sx={{ display: { xs: "block", md: "none" } }}>
-                <Typography variant="h6" color="white" fontFamily="Open Sans" fontWeight={600} gutterBottom>
+                <Typography variant="h6" color="white" fontFamily="purista-web" fontWeight={600} gutterBottom>
                     {title}
                 </Typography>
 
-                <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="Open Sans" sx={{ mb: 2 }}>
+                <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="purista-web" sx={{ mb: 2 }}>
                     {description}
                 </Typography>
 

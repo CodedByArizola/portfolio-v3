@@ -9,7 +9,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import DescriptionIcon from '@mui/icons-material/Description';
 
 // NAVBAR ICON STYLING
-const socialMediaIconStyling: object = {
+const socialMediaIconStyling = {
     '&:hover': {
         transform: 'scale(1.2)',
         color: 'var(--main_color2)'
@@ -33,7 +33,7 @@ const socialMediaIcons: Record<string, any> = {
 export default () => {
     return (
         <Box>
-            {socialMediaLinks.map((socialLink: SocialPlatform, index: number) => (
+            {socialMediaLinks.map((socialLink, index) => (
                 <IconButton key={index} href={socialLink.link} rel="noopener noreferrer" target="_blank" aria-label={socialLink.name}>
                     {(socialMediaIcons[socialLink.name])}
                 </IconButton>

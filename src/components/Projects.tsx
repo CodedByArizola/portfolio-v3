@@ -36,7 +36,7 @@ const Projects = () => {
             <ReactVisibilitySensor partialVisibility onChange={(isVisible: boolean) => setContainerVisibility(isVisible)}>
                 <Fade in={showContainer} timeout={1000}>
                     <Container maxWidth="xl" sx={{ minHeight: '99vh', py: 6 }}>
-                        <Typography variant="h4" fontFamily="Open Sans" color="white" sx={{ mb: 3 }}>
+                        <Typography variant="h4" fontFamily="purista-web" color="white" sx={{ mb: 3 }}>
                             <Link href="#projects" sx={linkStyling}>#</Link> Projects
                         </Typography>
 
@@ -46,7 +46,7 @@ const Projects = () => {
                         <Box sx={{ py: 3 }}>
                             <Container maxWidth="lg">
                                 <Box>
-                                    <Typography variant="h5" color="white" fontFamily="Open Sans" sx={{ mb: 4 }}>
+                                    <Typography variant="h5" color="white" fontFamily="purista-web" sx={{ mb: 4 }}>
                                         Featured Projects:
                                     </Typography>
 
@@ -57,7 +57,7 @@ const Projects = () => {
                                 </Box>
 
                                 <Box>
-                                    <Typography variant="h5" color="white" fontFamily="Open Sans" sx={{ mb: 4 }}>
+                                    <Typography variant="h5" color="white" fontFamily="purista-web" sx={{ mb: 4 }}>
                                         Other Projects:
                                     </Typography>
 

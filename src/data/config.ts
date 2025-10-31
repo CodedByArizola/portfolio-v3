@@ -1,4 +1,4 @@
-export const pages: string[] = ['About', /*'Experience',*/ 'Education', 'Projects', 'Contact'];
+export const pages: string[] = ['About', 'Education', 'Projects', 'Contact'];
 
 // API INFO FOR CONTACT FORM
 export const contactAPIRoute = 'https://api.web3forms.com/submit';
@@ -30,27 +30,6 @@ export const socialMediaLinks: SocialPlatform[] = [
         link: 'https://codedbyarizola.github.io/'
     }
 ];
-
-// EDUCATION COURSEWORK
-export const educationCoursework: Record<string, string[]> = {
-    'LWTech': [
-        'CSD275: PHP Scripting',
-        'CSD268: QA Methodologies',
-        'CSD233: C++ Programming',
-        'CSD230: Program Mobile Devices',
-        'CS&141: Computer Science I Java',
-        'CS143: Computer Science II',
-        'CSD138: SQL',
-        'CSD122: JavaScript',
-        'CSD112: HTML and CSS',
-        'CSD111: Computer Programming Fundamentals',
-        'CSD110: Computer Programming Fundamentals with Python'
-    ],
-    'NCHS': [
-        'TCS200: Introduction to Computer Science Principles',
-        'BWE110: Web Design'
-    ]
-};
 
 // PROJECTS
 export const listOfProjects: SoftwareProject[] = [
@@ -119,13 +98,6 @@ export const listOfProjects: SoftwareProject[] = [
         toolsUsed: ['Vue.js', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/weatherapp',
         siteLink: 'https://dainty-tapioca-dbc275.netlify.app/'
-    },
-    {
-        title: 'DOJ Simulated Web Tool',
-        description: 'Developed a web application simulating a legal system for an open-world video game community. The project includes a calculator for in-game jail time and fines, as well as a penal code list categorized by sections such as Capital, Felony, and Misdemeanor.',
-        featured: false,
-        toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
-        siteLink: 'https://doj.productionrp.org/'
     },
     {
         title: 'Rock Paper Scissors',
@@ -301,7 +273,6 @@ export const toolInformation: Record<string, Record<string, string>> = {
         link: 'https://lesscss.org/'
     },
     'Lua': {
-        //image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original-wordmark.svg',
         image: 'lua.png',
         link: 'https://lua.org/'
     },
