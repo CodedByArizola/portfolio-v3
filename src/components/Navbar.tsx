@@ -5,7 +5,7 @@ import { pages } from "../data/config";
 import MenuIcon from "@mui/icons-material/Menu";
 import NavbarLogo from "./NavbarLogo";
 
-export default ({ setMobileNavMenuVisibility }: NavbarProps) => {
+export default ({ setMobileNavMenuVisibility }: { setMobileNavMenuVisibility: React.Dispatch<React.SetStateAction<boolean>> }) => {
     const navigate = useNavigate();
 
     // RETURN ELEMENT

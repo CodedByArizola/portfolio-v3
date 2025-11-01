@@ -1,15 +1,15 @@
-import { Box, Container, Fade, Typography, Link, Divider, Grid, Button } from "@mui/material"
+import { Box, Container, Fade, Typography, Divider, Grid, Button } from "@mui/material"
 import { useState } from "react";
 
 import { listOfProjects } from "../data/config";
-import { linkStyling } from "../styles/styles";
+import { sectionIconStyle } from "../styles/styles";
 
 import ReactVisibilitySensor from "react-visibility-sensor";
 import Project from "./Project";
 import NonFeaturedProject from "./NonFeaturedProject";
+import TerminalIcon from '@mui/icons-material/Terminal';
 
-// PROJECTS
-const Projects = () => {
+export default () => {
     const [showContainer, setContainerVisibility] = useState(false);
     const [expandedNonFeaturedProjects, expandNonFeaturedProjects] = useState(false);
     const maxCardLimits = [5, 50];
@@ -36,8 +36,8 @@ const Projects = () => {
             <ReactVisibilitySensor partialVisibility onChange={(isVisible: boolean) => setContainerVisibility(isVisible)}>
                 <Fade in={showContainer} timeout={1000}>
                     <Container maxWidth="xl" sx={{ minHeight: '99vh', py: 6 }}>
-                        <Typography variant="h4" fontFamily="purista-web" color="white" sx={{ mb: 3 }}>
-                            <Link href="#projects" sx={linkStyling}>#</Link> Projects
+                        <Typography variant="h4" fontFamily="purista-web" color="white" sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                            <TerminalIcon sx={sectionIconStyle} /> Projects
                         </Typography>
 
                         <Divider sx={{ my: 3 }} />
@@ -96,5 +96,3 @@ const Projects = () => {
         </Box>
     )
 }
-
-export default Projects;

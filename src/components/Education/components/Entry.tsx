@@ -2,7 +2,8 @@ import { Box, Divider, Typography } from "@mui/material"
 import { EducationEntry } from "../interfaces"
 import Chip from "./Chip"
 
-export default ({ data }: { data: EducationEntry }) => {
+export default ({ data, mobile }: { data: EducationEntry, mobile?: boolean }) => {
+    const schoolCurricularsStyle = { p: 1.5, display: mobile ? 'inline' : 'flex', ...(!mobile ? { flexWrap: 'wrap', listStyle: 'none' } : {}) };
     return (
         <Box sx={{ mb: 2, p: 3, color: 'white', bgcolor: 'var(--main_color4)', borderRadius: 2, display: 'flex', flexDirection: 'column' }}>
             <Box sx={{ color: 'white', display: 'flex', flexDirection: 'column' }}>
@@ -25,8 +26,8 @@ export default ({ data }: { data: EducationEntry }) => {
                 Relevant Coursework
             </Typography>
 
-            <Box sx={{ p: 1.5, display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)' }}>
-                {data.relevantCourses.map(course => (<Chip name={course} />))}
+            <Box sx={schoolCurricularsStyle}>
+                {data.relevantCourses.map(course => (<Chip key={course} name={course} mobile />))}
             </Box>
 
             {(data.awards && data.awards.length > 0) && (
@@ -37,8 +38,8 @@ export default ({ data }: { data: EducationEntry }) => {
                         Awards
                     </Typography>
 
-                    <Box sx={{ p: 1.5, display: 'flex' }}>
-                        {data.awards.map(award => (<Chip name={award} />))}
+                    <Box sx={schoolCurricularsStyle}>
+                        {data.awards.map(award => (<Chip key={award} name={award} mobile />))}
                     </Box>
                 </>
             )}

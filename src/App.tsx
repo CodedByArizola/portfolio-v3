@@ -1,9 +1,9 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { Box } from "@mui/material";
+import BackgroundImageFile from './assets/background.webp';
 
 import Navbar from "./components/Navbar";
-import BackgroundImage from "./components/BackgroundImage";
 import MobileNavigationMenu from "./components/MobileNavigationMenu";
 
 import Home from "./pages/Home";
@@ -14,8 +14,19 @@ export default () => {
 
     return (
         <Router>
-            <BackgroundImage>
-                {showMobileNavMenu && <MobileNavigationMenu setMobileNavMenuVisibility={setMobileNavMenuVisibility} />}
+            <Box 
+                sx={{
+                    width: '100%',
+                    height: '100%',
+                    position: 'absolute',
+                    overflow: 'hidden',
+                    backgroundImage: `url(${BackgroundImageFile})`,
+                    backgroundPosition: 'center',
+                    backgroundSize: 'cover',
+                    backgroundRepeat: 'no-repeat'
+                }}
+            >
+                {showMobileNavMenu && <MobileNavigationMenu visibilitySetter={setMobileNavMenuVisibility} />}
 
                 <Box sx={{ height: '100vh', overflowX: 'hidden', overflowY: 'scroll' }}>
                     <Navbar setMobileNavMenuVisibility={setMobileNavMenuVisibility} />
@@ -26,7 +37,7 @@ export default () => {
                         <Route path="*" element={<Error />} />
                     </Routes>
                 </Box>
-            </BackgroundImage>
+            </Box>
         </Router>
     )
 }

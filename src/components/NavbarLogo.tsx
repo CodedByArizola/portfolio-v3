@@ -1,5 +1,5 @@
 import { Slide } from "@mui/material";
-import Logo from "../assets/logo.png";
+import Logo from "../assets/logo.webp";
 
 export default ({ imageSize }: { imageSize: string; }) => {
     return (
