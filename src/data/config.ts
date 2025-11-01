@@ -127,6 +127,13 @@ export const listOfProjects: SoftwareProject[] = [
         githubLink: 'https://github.com/CodedByArizola/flip-a-coin',
         siteLink: 'https://aa-flipacoin.netlify.app/'
     },
+     {
+        title: 'Link Tree v2',
+        description: 'The second and improved version of a tree of my social media links.',
+        toolsUsed: ['Vue.js', 'Vuetify', 'Vite', 'Cascading Style Sheets'],
+        githubLink: 'https://github.com/CodedByArizola/linktree-v2',
+        siteLink: 'https://aa-linktree-v2.netlify.app/'
+    },
     {
         title: 'Password Generator',
         description: 'A tool to generate a password! It gives the options for various factors to play into the generation such as numbers or symbols.',
