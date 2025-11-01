@@ -26,5 +26,5 @@ export const SubmitContactForm = async (eventTarget: any) => {
     });
 
     // RETURN DEFAULT CALLBACK
-    return { 'success': (apiResult && typeof apiResult === 'object' && apiResult.status === 200) ? true : false };
+    return { success: (apiResult && typeof apiResult === 'object' && apiResult.status === 200) ? true : false };
 }

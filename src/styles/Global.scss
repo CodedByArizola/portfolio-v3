@@ -62,10 +62,9 @@ body {
 	color: var(--main_color2_brighter) !important;
 }
 
-.ulist {
-	> .listitem {
-		&::marker {
-			color: var(--main_color2);
-		}
+.headshot {
+	&:hover {
+		filter: drop-shadow(0 0 1em var(--main_color2));
 	}
+	transition: filter 300ms;
 }

@@ -1,8 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
-// MOBILE NAVIGATION MENU BUTTON
-export default ({ name }: MobileNavigationMenuButtonProps) => {
+export default ({ name }: { name: string; }) => {
     return (
         <Box sx={{ px: 3, py: 1.55 }}>
             <Typography
@@ -14,7 +13,9 @@ export default ({ name }: MobileNavigationMenuButtonProps) => {
                     '&:hover': {
                         color: 'var(--main_color2_brighter)'
                     },
-                    fontFamily: 'Open Sans',
+                    fontFamily: 'purista-web',
+                    display: 'flex',
+                    alignItems: 'center',
                     color: 'white',
                     cursor: 'pointer',
                     transition: '.23s',
@@ -22,7 +23,7 @@ export default ({ name }: MobileNavigationMenuButtonProps) => {
                     fontStyle: 'italic'
                 }}
             >
-                <PlayArrowIcon sx={{ fontSize: 21, color: 'var(--main_color2)' }} /> {name}
+                <PlayArrowIcon sx={{ fontSize: 21, mr: 2, color: 'var(--main_color2)' }} /> {name}
             </Typography>
         </Box>
     )

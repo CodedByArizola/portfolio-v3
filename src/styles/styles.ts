@@ -1,23 +1,18 @@
-export const linkStyling: object = {
+export const linkStyling = {
     '&:hover': {
         color: 'var(--main_color2_brighter)'
     },
-    textDecoration: 'none',
     transition: '.2s',
     color: 'var(--main_color2)'
 };
 
-export const listItemStyling: object = {
+export const listItemStyling = {
     marginBottom: 5,
     color: 'white',
-    fontFamily: 'Open Sans'
+    fontFamily: 'purista-web'
 };
 
-export const tabStyling: object = {
-    textTransform: 'none'
-};
-
-export const viewingButtonStyling: object = {
+export const viewingButtonStyling = {
     '&:hover': {
         color: 'var(--main_color2_brighter)'
     },
@@ -25,4 +20,14 @@ export const viewingButtonStyling: object = {
     color: 'white',
     cursor: 'pointer',
     transition: '.2s'
-}
+};
+
+export const sectionIconStyle = {
+    '&:hover': {
+        color: 'var(--main_color2_brighter)'
+    },
+    transition: '.2s',
+    fontSize: 33,
+    mr: 1.5,
+    color: 'var(--main_color2)'
+};

@@ -1,7 +1,6 @@
 import { Box, CircularProgress } from "@mui/material"
 
-// CONTACT SENDING EMAIL LOADER
-const ContactSendingEmailLoader = () => {
+export default () => {
     return (
         <Box
             display="flex"
@@ -21,5 +20,3 @@ const ContactSendingEmailLoader = () => {
         </Box>
     )
 }
-
-export default ContactSendingEmailLoader;

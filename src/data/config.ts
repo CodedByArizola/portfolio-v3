@@ -1,10 +1,10 @@
-export const pages: string[] = ['About', /*'Experience',*/ 'Education', 'Projects', 'Contact'];
+import { SoftwareProject } from "../interfaces";
 
-// API INFO FOR CONTACT FORM
+export const pages: string[] = ['About', 'Education', 'Projects', 'Contact'];
 export const contactAPIRoute = 'https://api.web3forms.com/submit';
 
 // SOCIAL MEDIA LINKS
-export const socialMediaLinks: SocialPlatform[] = [
+export const socialMediaLinks: { name: string; link: string; }[] = [
     {
         name: 'GitHub',
         link: 'https://github.com/CodedByArizola/'
@@ -31,33 +31,19 @@ export const socialMediaLinks: SocialPlatform[] = [
     }
 ];
 
-// EDUCATION COURSEWORK
-export const educationCoursework: Record<string, string[]> = {
-    'LWTech': [
-        'CSD275: PHP Scripting',
-        'CSD268: QA Methodologies',
-        'CSD233: C++ Programming',
-        'CSD230: Program Mobile Devices',
-        'CS&141: Computer Science I Java',
-        'CS143: Computer Science II',
-        'CSD138: SQL',
-        'CSD122: JavaScript',
-        'CSD112: HTML and CSS',
-        'CSD111: Computer Programming Fundamentals',
-        'CSD110: Computer Programming Fundamentals with Python'
-    ],
-    'NCHS': [
-        'TCS200: Introduction to Computer Science Principles',
-        'BWE110: Web Design'
-    ]
-};
-
 // PROJECTS
 export const listOfProjects: SoftwareProject[] = [
     {
+        title: 'Game Inventory System',
+        description: 'A fully interactive inventory management system built with React, Sass, Redux and Vite on the front end and powered by a TypeScript + SQL backend. The system supports advanced item interactions, including moving, stacking, splitting, and transferring items between containers in real time. Designed with drag-and-drop functionality and keyboard shortcuts, users can quickly split stacks, use items, or transfer them between inventories with fluid responsiveness. Global state management via Redux ensures instant UI updates, while the backend maintains reliable data synchronization and persistence alongside updates to its SQL tables.',
+        image: 'game-inventory-system.webp',
+        featured: true,
+        toolsUsed: ['React.js', 'Redux.js', 'MySQL', 'TypeScript', 'Vite', 'Sass']
+    },
+    {
         title: 'Adriana\'s Bowtique',
         description: 'A website built for the bowtique named "Adriana\'s Bowtique". It is a bow shop centered in Washington, United States. This is a website to allow users to contact and view available bows for sale. Additionally, the website allows for translation to Spanish from English and vice versa.',
-        image: 'adrianas-bowtique.png',
+        image: 'adrianas-bowtique.webp',
         featured: true,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/adriana_bowtique',
@@ -66,8 +52,6 @@ export const listOfProjects: SoftwareProject[] = [
     {
         title: 'GitHub User Lookup',
         description: 'A tool to look up and view a GitHub user\'s profile.',
-        image: 'github_userlookup.png',
-        featured: true,
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/github_userlookup',
         siteLink: 'https://clever-wisp-aa80d7.netlify.app/'
@@ -75,25 +59,16 @@ export const listOfProjects: SoftwareProject[] = [
     {
         title: 'Movie Info App',
         description: 'A tool to look up a movie and see information about it!',
-        image: 'movieinfoapp.png',
+        image: 'movieinfoapp.webp',
         featured: true,
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/movieinfoapp',
         siteLink: 'https://zippy-cat-24ae8d.netlify.app/'
     },
     {
-        title: 'Link Tree v2',
-        description: 'The second and improved version of a tree of my social media links.',
-        image: 'aa-linktree-v2.png',
-        featured: true,
-        toolsUsed: ['Vue.js', 'Vuetify', 'Vite', 'Cascading Style Sheets'],
-        githubLink: 'https://github.com/CodedByArizola/linktree-v2',
-        siteLink: 'https://aa-linktree-v2.netlify.app/'
-    },
-    {
         title: 'Roleplay Community Website',
         description: 'Created a website for a gaming community centered towards roleplay. The website includes social media links, general information, F.A.Q and a gallery.',
-        image: 'productionrp.png',
+        image: 'roleplay-community-website.webp',
         featured: true,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
         siteLink: 'https://prpwebsite-v2.netlify.app/'
@@ -119,13 +94,6 @@ export const listOfProjects: SoftwareProject[] = [
         toolsUsed: ['Vue.js', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/weatherapp',
         siteLink: 'https://dainty-tapioca-dbc275.netlify.app/'
-    },
-    {
-        title: 'DOJ Simulated Web Tool',
-        description: 'Developed a web application simulating a legal system for an open-world video game community. The project includes a calculator for in-game jail time and fines, as well as a penal code list categorized by sections such as Capital, Felony, and Misdemeanor.',
-        featured: false,
-        toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
-        siteLink: 'https://doj.productionrp.org/'
     },
     {
         title: 'Rock Paper Scissors',
@@ -241,7 +209,7 @@ export const listOfProjects: SoftwareProject[] = [
 // TOOL INFORMATION
 export const toolInformation: Record<string, Record<string, string>> = {
     'Netlify': {
-        image: 'netlify.png',
+        image: 'netlify.webp',
         link: 'https://netlify.com/'
     },
     'Vite': {
@@ -249,12 +217,16 @@ export const toolInformation: Record<string, Record<string, string>> = {
         link: 'https://vitejs.dev/'
     },
     'Mantine': {
-        image: 'mantine.png',
+        image: 'mantine.webp',
         link: 'https://mantine.dev/'
     },
     'Preact.js': {
         image: 'preactjs.png',
         link: 'https://preactjs.com/'
+    },
+    'Redux.js': {
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg',
+        link: 'https://redux.js.org/'
     },
     'HTML': {
         image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg',
@@ -301,8 +273,7 @@ export const toolInformation: Record<string, Record<string, string>> = {
         link: 'https://lesscss.org/'
     },
     'Lua': {
-        //image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/lua/lua-original-wordmark.svg',
-        image: 'lua.png',
+        image: 'lua.webp',
         link: 'https://lua.org/'
     },
     'Vue.js': {

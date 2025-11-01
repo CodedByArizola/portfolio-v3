@@ -1,25 +1,25 @@
-import { Box, Container, Typography, Divider, Link, Fade, TextField, Button } from "@mui/material";
+import { Box, Container, Typography, Divider, Fade, TextField, Button } from "@mui/material";
 import { useState } from "react";
 
 import { SubmitContactForm } from "../controllers/contactform";
-import { linkStyling } from "../styles/styles";
+import { sectionIconStyle } from "../styles/styles";
 
 import ReactVisibilitySensor from "react-visibility-sensor";
 import ContactConfirmationAlert from "./ContactConfirmationAlert";
 import ContactSendingEmailLoader from "./ContactSendingEmailLoader";
+import EmailIcon from '@mui/icons-material/Email';
 import '../styles/Contact.scss';
+import Socials from "./Socials";
 
-// CONTACT COOLDOWN STATE
-let onCooldown: boolean = false;
+let onCooldown = false;
 
-// CONTACT
-const Contact = () => {
-    let alertClearingTimeout: any;
-    let cooldownAlertClearingTimeout: any;
+export default () => {
+    let alertClearingTimeout: NodeJS.Timeout;
+    let cooldownAlertClearingTimeout: NodeJS.Timeout;
 
     // STATES
     const [showContainer, setContainerVisibility] = useState(false);
-    const [submissionStatus, setSubmissionStatus]: any = useState({});
+    const [submissionStatus, setSubmissionStatus] = useState<Record<string, any>>({});
 
     const [showCooldownAlert, setCooldownAlertState] = useState(false);
     const [isSendingEmail, setSendingEmailState] = useState(false);
@@ -69,8 +69,6 @@ const Contact = () => {
 
         // END LOADING
         setSendingEmailState(false);
-
-        // CLEAR ALERT AFTER A BIT
         alertClearingTimeout = setTimeout(() => {
             setSubmissionStatus({});
         }, 11000);
@@ -82,15 +80,22 @@ const Contact = () => {
             <ReactVisibilitySensor partialVisibility onChange={(isVisible: boolean) => setContainerVisibility(isVisible)}>
                 <Fade in={showContainer} timeout={1000}>
                     <Container maxWidth="xl" sx={{ minHeight: '90vh', py: 2 }}>
-                        <Typography variant="h4" fontFamily="Open Sans" color="white" sx={{ mb: 3 }}>
-                            <Link href="#contact" sx={linkStyling}>#</Link> Contact
+                        <Typography variant="h4" fontFamily="purista-web" color="white" sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                            <EmailIcon sx={sectionIconStyle} /> Contact Me
                         </Typography>
 
-                        {/* DIVIDER */}
                         <Divider sx={{ my: 3 }} />
 
+                        <Typography component="p" variant="body1" fontFamily="purista-web" color="white" sx={{ mb: 2 }}>
+                            Have a project in mind? Want to learn more? Let's talk about it. You can contact me through email or any of my platforms and I will get back to you as soon as possible!
+                        </Typography>
+
+                        <Box sx={{ mb: 2 }}>
+                            <Socials />
+                        </Box>
+
                         {/* ALERTS */}
-                        {submissionStatus['success'] === true &&
+                        {submissionStatus.success === true &&
                             <ContactConfirmationAlert
                                 severity="success"
                                 message="Successfully sent an email! I will get to you as soon as possible!"
@@ -98,7 +103,7 @@ const Contact = () => {
                             />
                         }
 
-                        {submissionStatus['success'] === false &&
+                        {submissionStatus.success === false &&
                             <ContactConfirmationAlert severity="error" message="An error occurred while sending the email!" onHideAlertClick={onHideAlertClick} />
                         }
 
@@ -181,5 +186,3 @@ const Contact = () => {
         </Box>
     )
 }
-
-export default Contact;

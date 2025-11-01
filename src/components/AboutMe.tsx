@@ -1,46 +1,57 @@
-import { Box, Container, Typography, Divider, Link } from "@mui/material";
-import { linkStyling } from "../styles/styles";
+import { Box, Container, Typography, Divider } from "@mui/material";
+import { sectionIconStyle } from "../styles/styles";
+import PersonIcon from '@mui/icons-material/Person';
+import Headshot from './../assets/headshot.webp';
 
 export default () => {
     return (
         <Box id="about" component="section">
             <Container maxWidth="xl" sx={{ minHeight: '99vh', py: 13 }}>
-                <Typography variant="h4" fontFamily="Open Sans" color="white" sx={{ mb: 3 }}>
-                    <Link href="#about" sx={linkStyling}>#</Link> About Me
+                <Typography variant="h4" fontFamily="purista-web" color="white" sx={{ display: 'flex', alignItems: 'center', mb: 3 }}>
+                    <PersonIcon sx={sectionIconStyle} /> About Me
                 </Typography>
 
                 <Divider sx={{ my: 3 }} />
 
-                <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
-                    Hi, my name is Alex.
-                    I'm a graduate of North Creek High School and currently an undergraduate at Lake Washington Institute of Technology, pursuing a degree in Computing and Software Development.
-                    My goal is to complete my Associate of Applied Science degree and continue on to earn my Bachelor's.
-                    In my free time, I enjoy coding, listening to music, watching sunsets, spending time with my dogs Charlie and Marcie, and staying active at the gym.
-                </Typography>
+                {/* DESKTOP / LARGE MONITORS */}
+                <Box sx={{ width: '100%', display: { xs: "none", md: "flex" }, flexDirection: 'column' }}>
+                    <div style={{ display: 'flex', justifyContent: 'space-between'}}>
+                        <Box sx={{ width: 750, p: 3, bgcolor: 'var(--main_color4)', borderRadius: 2 }}>
+                            <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
+                                I am a first-generation software engineer with experience in various programming languages, primarily specializing in front-end development.
+                                I'm currently pursuing my Associate's Degree at Lake Washington Institute of Technology and have been studying computer science since high school.
+                            </Typography>
 
-                <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
-                    Since November 2019, I have gained hands-on experience in the software engineering field through freelance projects, delivering solutions across various areas and deepening my technical expertise.
-                    Despite not yet having formal work experience in the tech industry, I have built a strong skill set in programming and software development.
-                    I am proficient in languages such as Lua, TypeScript, and SQL, and I have experience working with frameworks like jQuery and React.
-                    Additionally, I am familiar with GitHub for version control, enabling effective collaboration and project management.
-                </Typography>
+                            <Typography component="p" variant="body1" fontFamily="Open Sans" color="white">
+                                Alongside my academic journey, I have been building my career since 2019 through freelance projects, delivering tailored solutions across diverse areas while leading teams of both senior and junior developers.
+                                Through this work, I've developed expertise in fostering collaboration via code reviews, mentoring, and knowledge-sharing, while driving technical excellence in architecture, testing, and implementation. I am continuing to expand my skills through formal studies and plan to advance into a bachelor’s program, combining practical experience with academic growth.
+                            </Typography>
+                        </Box>
 
-                <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
-                    As part of my studies at Lake Washington Institute of Technology, I am expanding my knowledge by learning languages such as C#, Python, and Java.
-                    These academic and freelance experiences have honed my technical abilities, strengthened my adaptability, and equipped me with problem-solving skills to handle diverse and challenging tasks.
-                </Typography>
+                        <Box>
+                            <img className="headshot" src={Headshot} width="300" height="300" style={{ borderRadius: '100%' }} alt="picture of myself" />
+                        </Box>
+                    </div>
+                </Box>
 
-                <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
-                    I speak, write and understand English expertly as my first language as well as being capable of understanding and speaking Spanish.
-                </Typography>
+                {/* MOBILE / SMALL MONITORS */}
+                <Box sx={{ width: '100%', display: { xs: "flex", md: "none" }, alignItems: 'center', flexDirection: 'column' }}>
+                    <Box sx={{ mb: 2 }}>
+                        <img className="headshot" src={Headshot} width="300" height="300" style={{ borderRadius: '100%' }} alt="picture of myself" />
+                    </Box>
 
-                <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
-                    I am currently seeking an employment opportunity or internship as a front-end developer to apply my skills and contribute to a growing and strong team.
-                </Typography>
+                    <Box sx={{ p: 3, bgcolor: 'var(--main_color4)', borderRadius: 2 }}>
+                        <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
+                            I am a first-generation software engineer with experience in various programming languages, primarily specializing in front-end development.
+                            I'm currently pursuing my Associate's Degree at Lake Washington Institute of Technology and have been studying computer science since high school.
+                        </Typography>
 
-                <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2, textDecoration: 'underline' }}>
-                    Authorized to work in the United States for any employer.
-                </Typography>
+                        <Typography component="p" variant="body1" fontFamily="Open Sans" color="white">
+                            Alongside my academic journey, I have been building my career since 2019 through freelance projects, delivering tailored solutions across diverse areas while leading teams of both senior and junior developers.
+                            Through this work, I've developed expertise in fostering collaboration via code reviews, mentoring, and knowledge-sharing, while driving technical excellence in architecture, testing, and implementation. I am continuing to expand my skills through formal studies and plan to advance into a bachelor’s program, combining practical experience with academic growth.
+                        </Typography>
+                    </Box>
+                </Box>
             </Container>
         </Box>
     )

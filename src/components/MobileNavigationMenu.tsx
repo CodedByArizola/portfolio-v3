@@ -5,12 +5,8 @@ import { pages } from "../data/config";
 import CloseIcon from '@mui/icons-material/Close';
 import MobileNavigationMenuButton from "./MobileNavigationMenuButton";
 
-// MOBILE NAVIGATION MENU
-const MobileNavigationMenu = (props: any) => {
+export default ({ visibilitySetter }: { visibilitySetter: React.Dispatch<React.SetStateAction<boolean>>; }) => {
     const [shouldSlide, setSlideState] = useState(true);
-    const { setMobileNavMenuVisibility } = props;
-
-    // RETURN ELEMENT
     return (
         <Box sx={{ width: '100%', height: '100%', position: 'absolute', zIndex: 99999, bgcolor: 'rgba(0, 0, 0, .65)' }}>
             <Box display="flex" justifyContent="flex-end">
@@ -23,7 +19,7 @@ const MobileNavigationMenu = (props: any) => {
                             right: 0,
                             position: 'fixed',
                             bgcolor: 'var(--main_color1)',
-                            borderLeft: '4.5px solid var(--main_color2)'
+                            borderLeft: '3.5px solid var(--main_color2)'
                         }}
                     >
                         <Container maxWidth="md">
@@ -40,7 +36,7 @@ const MobileNavigationMenu = (props: any) => {
                                     }}
                                     onClick={() => {
                                         setSlideState(false);
-                                        setTimeout(() => setMobileNavMenuVisibility(false), 150);
+                                        setTimeout(() => visibilitySetter(false), 150);
                                     }}
                                 />
                             </Box>
@@ -56,5 +52,3 @@ const MobileNavigationMenu = (props: any) => {
         </Box>
     )
 }
-
-export default MobileNavigationMenu;

@@ -1,27 +1,23 @@
 import { Tooltip, IconButton } from "@mui/material";
 import { toolInformation } from "../data/config";
 
-const toolsWithLocalImages: any = {
-    'Netlify': true,
-    'Vite': true,
-    'Mantine': true,
+const toolsWithLocalImages: Record<string, boolean> = {
+    Netlify: true,
+    Vite: true,
+    Mantine: true,
     'Preact.js': true,
-    'Lua': true
+    Lua: true
 };
 
-// PROJECT TOOL
-export default ({ name }: ProjectToolProps) => {
+export default ({ name }: { name: string; }) => {
     const thisTool = toolInformation[name];
-    const imageURL = toolsWithLocalImages[name] ? new URL(`../assets/${thisTool.image}`, import.meta.url).href : thisTool.image;
-
-    // RETURN ELEMENT
     return (
         <Tooltip title={name} placement="top" arrow>
-            <IconButton href={thisTool.link} target="_blank" aria-label={name}>
+            <IconButton href={thisTool.link ?? '#'} target="_blank" aria-label={name}>
                 <img
                     width="32"
                     height="32"
-                    src={imageURL}
+                    src={toolsWithLocalImages[name] ? new URL(`../assets/${thisTool.image}`, import.meta.url).href : thisTool.image}
                     alt="project tool"
                     draggable="false"
                     loading="lazy"
