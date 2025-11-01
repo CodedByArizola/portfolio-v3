@@ -46,9 +46,13 @@ export default () => {
                             I'm currently pursuing my Associate's Degree at Lake Washington Institute of Technology and have been studying computer science since high school.
                         </Typography>
 
-                        <Typography component="p" variant="body1" fontFamily="Open Sans" color="white">
+                        <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
                             Alongside my academic journey, I have been building my career since 2019 through freelance projects, delivering tailored solutions across diverse areas while leading teams of both senior and junior developers.
                             Through this work, I've developed expertise in fostering collaboration via code reviews, mentoring, and knowledge-sharing, while driving technical excellence in architecture, testing, and implementation. I am continuing to expand my skills through formal studies and plan to advance into a bachelor’s program, combining practical experience with academic growth.
+                        </Typography>
+
+                        <Typography component="p" variant="body1" fontFamily="Open Sans" color="white">
+                            Outside of my code editor, I enjoy staying active at the gym, spending quality time with family and friends, taking walks, and practicing at the range.
                         </Typography>
                     </Box>
                 </Box>
