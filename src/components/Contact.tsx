@@ -86,7 +86,7 @@ export default () => {
 
                         <Divider sx={{ my: 3 }} />
 
-                        <Typography component="p" variant="body1" fontFamily="purista-web" color="white" sx={{ mb: 2 }}>
+                        <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
                             Have a project in mind? Want to learn more? Let's talk about it. You can contact me through email or any of my platforms and I will get back to you as soon as possible!
                         </Typography>
 

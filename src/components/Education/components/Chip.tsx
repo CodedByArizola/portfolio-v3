@@ -14,7 +14,7 @@ export default ({ name, mobile }: { name: string; mobile?: boolean; }) => {
                 px: 2,
                 mr: 1,
                 mb: mobile ? 1 : 0,
-                fontFamily: 'purista-web',
+                fontFamily: 'Open Sans',
                 fontSize: 15,
                 textAlign: 'center',
                 color: 'var(--main_color2)',

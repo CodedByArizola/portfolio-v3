@@ -51,7 +51,7 @@ export default () => {
                                     </Typography>
 
                                     {/* FEATURED PROJECTS */}
-                                    {featuredProjects.map((projectData: any, index: number) => (
+                                    {featuredProjects.map((projectData: any, index) => (
                                         <Project key={index} {...projectData} />
                                     ))}
                                 </Box>
@@ -63,7 +63,7 @@ export default () => {
 
                                     {/* NON-FEATURED PROJECTS */}
                                     <Grid container spacing={4}>
-                                        {nonFeaturedProjects.map((projectData: any, index: number) => (
+                                        {nonFeaturedProjects.map((projectData: any, index) => (
                                             <Grid item hidden={index > maxCardLimits[expandedNonFeaturedProjects ? 1 : 0]} key={index} xs={12} sm={6} md={4}>
                                                 <NonFeaturedProject key={index} {...projectData} />
                                             </Grid>

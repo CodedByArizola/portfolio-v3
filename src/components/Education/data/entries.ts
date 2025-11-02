@@ -12,8 +12,8 @@ export const educationEntries: EducationEntry[] = [
             'Computer Science I Java',
             'Computer Science II',
             'Computer Programming Fundamentals',
+            'Program Mobile Devices',
             'SQL',
-            'C++ Programming',
             'JavaScript',
             'PHP Scripting'
         ],

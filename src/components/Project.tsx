@@ -45,7 +45,7 @@ export default ({ title, description, image, toolsUsed, githubLink, siteLink }: 
                         variant="subtitle1"
                         align="right"
                         color="darkgray"
-                        fontFamily="purista-web"
+                        fontFamily="Open Sans"
                         sx={{
                             mb: 2,
                             p: 1,
@@ -83,7 +83,7 @@ export default ({ title, description, image, toolsUsed, githubLink, siteLink }: 
                     {title}
                 </Typography>
 
-                <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="purista-web" sx={{ mb: 2 }}>
+                <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="Open Sans" sx={{ mb: 2 }}>
                     {description}
                 </Typography>
 

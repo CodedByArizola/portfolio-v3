@@ -6,8 +6,7 @@ import ProjectTool from "./ProjectTool";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
-// NON-FEATURED PROJECT
-const NonFeaturedProject = (props: NonFeaturedProjectProps) => {
+export default (props: NonFeaturedProjectProps) => {
     const { title, description, toolsUsed, githubLink, siteLink } = props;
 
     // RETURN ELEMENT
@@ -17,7 +16,7 @@ const NonFeaturedProject = (props: NonFeaturedProjectProps) => {
                 {title}
             </Typography>
 
-            <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="purista-web" sx={{ mb: 3 }}>
+            <Typography component="p" variant="subtitle2" color="darkgray" fontFamily="Open Sans" sx={{ mb: 3 }}>
                 {description}
             </Typography>
 
@@ -47,5 +46,3 @@ const NonFeaturedProject = (props: NonFeaturedProjectProps) => {
         </Card>
     )
 }
-
-export default NonFeaturedProject;
