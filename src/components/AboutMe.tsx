@@ -19,7 +19,7 @@ export default () => {
                         <Box sx={{ width: 750, p: 3, bgcolor: 'var(--main_color4)', borderRadius: 2 }}>
                             <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
                                 I am a first-generation software engineer with experience in various programming languages, primarily specializing in front-end development.
-                                I'm currently pursuing my Associate's Degree at Lake Washington Institute of Technology and have been studying computer science since high school.
+                                I have an Associate's Degree in Computing and Software Development at Lake Washington Institute of Technology and have been studying computer science since high school.
                             </Typography>
 
                             <Typography component="p" variant="body1" fontFamily="Open Sans" color="white" sx={{ mb: 2 }}>
