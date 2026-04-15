@@ -14,8 +14,8 @@ import Socials from "./Socials";
 let onCooldown = false;
 
 export default () => {
-    let alertClearingTimeout: NodeJS.Timeout;
-    let cooldownAlertClearingTimeout: NodeJS.Timeout;
+    let alertClearingTimeout: number;
+    let cooldownAlertClearingTimeout: number;
 
     // STATES
     const [showContainer, setContainerVisibility] = useState(false);
@@ -172,7 +172,8 @@ export default () => {
                                     },
                                     py: 1,
                                     mt: 3,
-                                    fontSize: 18,
+                                    fontSize: 15,
+                                    fontFamily: 'purista-web',
                                     borderColor: 'var(--main_color2)',
                                     color: 'var(--main_color2)'
                                 }}

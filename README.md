@@ -19,7 +19,7 @@
 <hr style="opacity: .4;">
 
 <p align="center">
-    This is the third version of my personal portfolio hosted by <a href='https://netlify.com/' target="_blank">Netlify</a> and built with <a href='https://mui.com/' target="_blank">Material UI</a> and <a href='https://reactjs.org/' target="_blank">React.js</a>. Any utilized APIs are called using <a href='https://axios-http.com/' target="_blank">Axios</a>.
+    This is the current version of my personal portfolio hosted by <a href='https://netlify.com/' target="_blank">Netlify</a> and built with <a href='https://mui.com/' target="_blank">Material UI</a> and <a href='https://reactjs.org/' target="_blank">React.js</a>. Any utilized APIs are called using <a href='https://axios-http.com/' target="_blank">Axios</a>.
 </p>
 
 ### 🛠️ Please Read:

@@ -20,7 +20,7 @@ const socialMediaIconStyling = {
 };
 
 // ICONS FOR EACH SOCIAL MEDIA
-const socialMediaIcons: Record<string, any> = {
+const socialMediaIcons: Record<string, JSX.Element> = {
     GitHub: <GitHubIcon sx={socialMediaIconStyling} />,
     Instagram: <InstagramIcon sx={socialMediaIconStyling} />,
     X: <XIcon sx={socialMediaIconStyling} />,

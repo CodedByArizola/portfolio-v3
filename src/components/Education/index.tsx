@@ -25,12 +25,12 @@ export default () => {
                         <Box sx={{ display: 'flex', p: 2 }}>
                             {/* DESKTOP / LARGE MONITORS */}
                             <Box sx={{ width: '100%', display: { xs: "none", md: "flex" }, flexDirection: 'column' }}>
-                                {educationEntries.map(entry => (<Entry key={entry.name} data={entry} />))}
+                                {educationEntries.map((entry, index) => (<Entry key={index} data={entry} />))}
                             </Box>
 
                             {/* MOBILE / SMALL MONITORS */}
                             <Box sx={{ width: '100%', display: { xs: "block", md: "none" }, flexDirection: 'column' }}>
-                                {educationEntries.map(entry => (<Entry key={entry.name} data={entry} mobile />))}
+                                {educationEntries.map((entry, index) => (<Entry key={index} data={entry} mobile />))}
                             </Box>
                         </Box>
                     </Container>

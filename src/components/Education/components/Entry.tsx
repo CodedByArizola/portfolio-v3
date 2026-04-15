@@ -15,34 +15,31 @@ export default ({ data, mobile }: { data: EducationEntry, mobile?: boolean }) =>
                     <span style={{ color: 'var(--main_color2)' }}>{data.degree}</span> in <span style={{ color: 'var(--main_color2)' }}>{data.major}</span>
                 </Typography>
 
-                <Typography sx={{ fontSize: 13, color: 'lightgray', fontFamily: 'purista-web' }}>
+                <Typography sx={{ fontSize: 14, color: 'lightgray', fontFamily: 'purista-web' }}>
                     {data.duration}
                 </Typography>
 
-                <Divider sx={{ my: 2 }} />
+                {/* <Divider sx={{ my: 2 }} /> */}
             </Box>
 
-            <Typography sx={{ fontSize: 17, fontFamily: 'purista-web' }}>
+            {/* <Typography sx={{ fontSize: 17, fontFamily: 'purista-web' }}>
                 Relevant Coursework
             </Typography>
 
             <Box sx={schoolCurricularsStyle}>
                 {data.relevantCourses.map(course => (<Chip key={course} name={course} mobile />))}
-            </Box>
+            </Box> */}
 
-            {(data.awards && data.awards.length > 0) && (
-                <>
-                    <Divider sx={{ my: 2 }} />
+            {(data.awards && data.awards.length > 0) && (<>
+                <Divider sx={{ my: 2 }} />
+                <Typography sx={{ fontSize: 17, fontFamily: 'purista-web' }}>
+                    Awards
+                </Typography>
 
-                    <Typography sx={{ fontSize: 17, fontFamily: 'purista-web' }}>
-                        Awards
-                    </Typography>
-
-                    <Box sx={schoolCurricularsStyle}>
-                        {data.awards.map(award => (<Chip key={award} name={award} mobile />))}
-                    </Box>
-                </>
-            )}
+                <Box sx={schoolCurricularsStyle}>
+                    {data.awards.map(award => (<Chip key={award} name={award} mobile />))}
+                </Box>
+            </>)}
         </Box>
     )
 }

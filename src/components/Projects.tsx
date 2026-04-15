@@ -78,7 +78,8 @@ export default () => {
                                                     borderColor: 'var(--main_color2_brighter)',
                                                     color: 'var(--main_color2_brighter)'
                                                 },
-                                                fontSize: 18,
+                                                fontSize: 15,
+                                                fontFamily: 'purista-web',
                                                 borderColor: 'var(--main_color2)',
                                                 color: 'var(--main_color2)'
                                             }}

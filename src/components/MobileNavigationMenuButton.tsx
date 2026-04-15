@@ -1,7 +1,7 @@
 import { Box, Typography } from '@mui/material';
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 
-export default ({ name }: { name: string; }) => {
+export default ({ name, onClose }: { name: string; onClose: () => void }) => {
     return (
         <Box sx={{ px: 3, py: 1.55 }}>
             <Typography
@@ -9,6 +9,7 @@ export default ({ name }: { name: string; }) => {
                 href={`#${name.toLowerCase()}`}
                 variant="h5"
                 aria-label={name}
+                onClick={onClose}
                 sx={{
                     '&:hover': {
                         color: 'var(--main_color2_brighter)'

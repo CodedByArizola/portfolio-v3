@@ -3,6 +3,14 @@ import { EducationEntry } from "../interfaces";
 export const educationEntries: EducationEntry[] = [
     {
         name: 'Lake Washington Institute of Technology',
+        degree: 'Bachelor of Science',
+        major: 'Computer Science',
+        duration: 'September 2026 - August 2028',
+        relevantCourses: [],
+        awards: []
+    },
+    {
+        name: 'Lake Washington Institute of Technology',
         degree: 'Associate of Applied Science - Transfer',
         major: 'Computing and Software Development',
         duration: 'July 2023 - December 2025',

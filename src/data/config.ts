@@ -42,7 +42,7 @@ export const listOfProjects: SoftwareProject[] = [
     },
     {
         title: 'Adriana\'s Bowtique',
-        description: 'A website built for the bowtique named "Adriana\'s Bowtique". It is a bow shop centered in Washington, United States. This is a website to allow users to contact and view available bows for sale. Additionally, the website allows for translation to Spanish from English and vice versa.',
+        description: 'Designed and developed a responsive, user-friendly website for Adriana\'s Bowtique, a small business, to enhance its online presence and improve customer engagement. Enabled customers to easily browse available products and submit inquiries through a streamlined contact system, helping bridge the gap between the business and its audience. Implemented bilingual (English-Spanish) support to expand accessibility and reach a broader customer base.',
         image: 'adrianas-bowtique.webp',
         featured: true,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
@@ -50,15 +50,25 @@ export const listOfProjects: SoftwareProject[] = [
         siteLink: 'https://adrianas-bowtique.netlify.app/'
     },
     {
+        title: 'GhostEye (FiveM-Based Anti-Cheat)',
+        description: 'Engineered a real-time anti-cheat framework for a FiveM multiplayer environment, leveraging server-client validation, behavioral analysis, and event inspection. Developed automated enforcement pipelines with logging, screenshot capture, and real-time alerting, enabling faster incident response and moderation actions.',
+        toolsUsed: ['TypeScript', 'discord.js', 'MySQL', 'npm']
+    },
+    {
+        title: 'Untitled Tank Game',
+        description: 'Collaborated on a team-based game project using Unity and C#. Developed a fast melee enemy called the Knight with unique behavior, improved UI for better player experience, and implemented a spawn protection system to enhance gameplay balance. Enforced clean version control practices using GitHub and Jira, including isolated branch testing, and helped team members adopt effective collaboration workflows.',
+        toolsUsed: ['Unity', 'C#', 'Jira']
+    },
+    {
         title: 'GitHub User Lookup',
-        description: 'A tool to look up and view a GitHub user\'s profile.',
+        description: 'Developed a user-friendly tool that allows users to quickly search and view GitHub profiles. The application displays key information such as username, profile picture, bio, company, public repositories, etc, providing a brief and accessible overview of any GitHub account.',
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/github_userlookup',
         siteLink: 'https://clever-wisp-aa80d7.netlify.app/'
     },
     {
         title: 'Movie Info App',
-        description: 'A tool to look up a movie and see information about it!',
+        description: 'Developed an application that enables users to search for movies and view detailed information in a clean and accessible format. The tool provides key details such as plot summary, poster image, box office performance, etc, offering a brief overview of each film.',
         image: 'movieinfoapp.webp',
         featured: true,
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
@@ -67,21 +77,15 @@ export const listOfProjects: SoftwareProject[] = [
     },
     {
         title: 'Roleplay Community Website',
-        description: 'Created a website for a gaming community centered towards roleplay. The website includes social media links, general information, F.A.Q and a gallery.',
+        description: 'As the lead developer of a FiveM community, I designed and developed a responsive web platform to centralize resources, streamline onboarding, and enhance user engagement. The website serves as a hub for community information, media content, and external platform integrations.',
         image: 'roleplay-community-website.webp',
         featured: true,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
         siteLink: 'https://prpwebsite-v2.netlify.app/'
     },
     {
-        title: 'FiveM Server Framework',
-        description: 'Developed a custom server framework for FiveM, featuring core systems like player management, economy, and job mechanics. Designed for performance, scalability, and flexibility, enabling seamless integration of custom resources and rapid server customization.',
-        featured: false,
-        toolsUsed: ['Lua', 'JavaScript', 'TypeScript', 'MySQL', 'React.js', 'HTML', 'Cascading Style Sheets', 'jQuery', 'Sass', 'Material UI', 'Vite']
-    },
-    {
-        title: 'Personal Portfolio v3',
-        description: 'The third version of my personal portfolio. This is what you are looking at right now!',
+        title: 'Personal Portfolio',
+        description: 'Designed and deployed my professional portfolio with precise accessibility, informative content, and a responsive, user-centric interface, delivering a seamless experience across devices.',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/portfolio-v3',
@@ -104,16 +108,8 @@ export const listOfProjects: SoftwareProject[] = [
         siteLink: 'https://aa-rock-paper-scissors.netlify.app/'
     },
     {
-        title: 'AI Image Generator',
-        description: 'A website that prompts the user to enter the description of an image. Once a description is set, AI generates it.',
-        featured: false,
-        toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Less'],
-        githubLink: 'https://github.com/CodedByArizola/ai-image-generator',
-        siteLink: 'https://aa-ai-image-generator.netlify.app/'
-    },
-    {
         title: 'QR Code Generator',
-        description: 'A simple QR code generator for any text or link.',
+        description: 'Developed a simple application that allows users to generate QR codes from any text or URL for quick and easy sharing.',
         featured: false,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/qr-code-generator',
@@ -136,7 +132,7 @@ export const listOfProjects: SoftwareProject[] = [
     },
     {
         title: 'Password Generator',
-        description: 'A tool to generate a password! It gives the options for various factors to play into the generation such as numbers or symbols.',
+        description: 'Developed a customizable password generator that allows users to create secure passwords based on selected criteria, including lowercase and uppercase letters, numbers, and symbols.',
         featured: false,
         toolsUsed: ['Preact.js', 'Mantine', 'TypeScript', 'Vite', 'Less'],
         githubLink: 'https://github.com/CodedByArizola/password_generator',
@@ -149,78 +145,17 @@ export const listOfProjects: SoftwareProject[] = [
         toolsUsed: ['React.js', 'Mantine', 'TypeScript', 'Vite', 'Sass'],
         githubLink: 'https://github.com/CodedByArizola/currency_converter',
         siteLink: 'https://classy-choux-2958bf.netlify.app/'
-    },
-    {
-        title: 'URL Shortener',
-        description: 'A tool to shorten long URLs to shorter URLs.',
-        featured: false,
-        toolsUsed: ['Svelte', 'TypeScript', 'Vite', 'Less'],
-        githubLink: 'https://github.com/CodedByArizola/url_shortener',
-        siteLink: 'https://transcendent-palmier-9cc6ea.netlify.app/'
-    },
-    {
-        title: 'Contact Form',
-        description: 'A form for users to send their contact details and a message to my email!',
-        featured: false,
-        toolsUsed: ['React.js', 'Bootstrap', 'TypeScript', 'Vite', 'Less'],
-        githubLink: 'https://github.com/CodedByArizola/contactme',
-        siteLink: 'https://sparkly-swan-b4f0e8.netlify.app/'
-    },
-    {
-        title: 'Link Tree v1',
-        description: 'The first version of a tree of my social media links.',
-        featured: false,
-        toolsUsed: ['Vue.js', 'Sass'],
-        githubLink: 'https://github.com/CodedByArizola/linktree',
-        siteLink: 'https://aa-linktree-v1.netlify.app/'
-    },
-    {
-        title: 'Weekly Temperature Chart',
-        description: 'This is a program that will record temperatures of each day of the week per user\'s input as well as display the coldest and warmest day. It will also summon a bar chart with the temperature values.',
-        featured: false,
-        toolsUsed: ['Python'],
-        githubLink: 'https://github.com/CodedByArizola/linktree'
-    },
-    {
-        title: 'Mock Mobile Data Terminal for FiveM',
-        description: 'Created for usage on the multiplayer roleplay-based video game called FiveM. The purpose of this interface is to simulate the functionalities of a real MDT to work hand in hand with emergency services as well as to enhance the roleplay and immersion.',
-        featured: false,
-        toolsUsed: ['HTML', 'Cascading Style Sheets', 'jQuery', 'TypeScript', 'Lua', 'MySQL'],
-        siteLink: 'https://imgur.com/gallery/nn2cCiE'
-    },
-    {
-        title: 'Mock Mobile Phone for FiveM',
-        description: 'Created for usage on the multiplayer roleplay-based video game called FiveM. The purpose of this phone is to simulate the functionalities of a real phone with the ability to call, text, email, manage contacts and interact with the world on social media!',
-        featured: false,
-        toolsUsed: ['HTML', 'Cascading Style Sheets', 'jQuery', 'TypeScript', 'Lua', 'MySQL'],
-        siteLink: 'https://imgur.com/gallery/EP8iE8w'
-    },
-    {
-        title: 'Personal Portfolio v2',
-        description: 'The second version of my personal portfolio.',
-        featured: false,
-        toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Cascading Style Sheets'],
-        githubLink: 'https://github.com/CodedByArizola/portfolio',
-        siteLink: 'https://aa-portfolio-v2.netlify.app/'
-    },
-    {
-        title: 'Personal Portfolio v1',
-        description: 'The very first version of my personal portfolio. This is as well as my first project in web development.',
-        featured: false,
-        toolsUsed: ['HTML', 'Cascading Style Sheets'],
-        githubLink: 'https://github.com/CodedByArizola/portfolio-old',
-        siteLink: 'https://aa-portfolio-v1.netlify.app/'
     }
 ];
 
 // TOOL INFORMATION
 export const toolInformation: Record<string, Record<string, string>> = {
     'Netlify': {
-        image: 'netlify.webp',
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/netlify/netlify-original.svg',
         link: 'https://netlify.com/'
     },
     'Vite': {
-        image: 'vite.png',
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vitejs/vitejs-original.svg',
         link: 'https://vitejs.dev/'
     },
     'Mantine': {
@@ -280,7 +215,7 @@ export const toolInformation: Record<string, Record<string, string>> = {
         link: 'https://lesscss.org/'
     },
     'Lua': {
-        image: 'lua.webp',
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/lua/lua-original.svg',
         link: 'https://lua.org/'
     },
     'Vue.js': {
@@ -306,5 +241,25 @@ export const toolInformation: Record<string, Record<string, string>> = {
     'Vuetify': {
         image: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuetify/vuetify-original.svg',
         link: 'https://vuetifyjs.com/'
+    },
+    'discord.js': {
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/discordjs/discordjs-original.svg',
+        link: 'https://discord.js.org/'
+    },
+    'npm': {
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/npm/npm-original.svg',
+        link: 'https://www.npmjs.com/'
+    },
+    'Unity': {
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/unity/unity-original.svg',
+        link: 'https://unity.com/'
+    },
+    'C#': {
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg',
+        link: 'https://csharp.com/'
+    },
+    'Jira': {
+        image: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jira/jira-original.svg',
+        link: 'https://www.atlassian.com/software/jira'
     }
 };

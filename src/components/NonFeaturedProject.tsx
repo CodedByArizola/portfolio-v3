@@ -6,10 +6,7 @@ import ProjectTool from "./ProjectTool";
 import GitHubIcon from '@mui/icons-material/GitHub';
 import OpenInNewIcon from '@mui/icons-material/OpenInNew';
 
-export default (props: NonFeaturedProjectProps) => {
-    const { title, description, toolsUsed, githubLink, siteLink } = props;
-
-    // RETURN ELEMENT
+export default ({ title, description, toolsUsed, githubLink, siteLink }: NonFeaturedProjectProps) => {
     return (
         <Card variant="outlined" sx={{ width: 275, p: 3 }}>
             <Typography variant="h5" color="white" fontFamily="purista-web" fontWeight={600} gutterBottom>

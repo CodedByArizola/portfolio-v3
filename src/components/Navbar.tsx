@@ -1,38 +1,26 @@
 import { AppBar, Container, Toolbar, Box, IconButton, Button, Slide } from "@mui/material";
-import { useNavigate } from "react-router-dom";
 import { pages } from "../data/config";
-
 import MenuIcon from "@mui/icons-material/Menu";
-import NavbarLogo from "./NavbarLogo";
 
 export default ({ setMobileNavMenuVisibility }: { setMobileNavMenuVisibility: React.Dispatch<React.SetStateAction<boolean>> }) => {
-    const navigate = useNavigate();
-
-    // RETURN ELEMENT
     return (
         <AppBar sx={{ py: 2, boxShadow: 'none', bgcolor: 'none', background: 'none' }} position="static">
             <Container maxWidth="xl">
                 <Toolbar disableGutters>
                     {/* DESKTOP / LARGE MONITORS */}
-                    <Box 
-                        sx={{
-                            '&:hover': {
-                                animation: 'pulse 1s infinite'
-                            },
-                            display: { xs: "none", md: "flex" },
-                            mr: 5,
-                            cursor: 'pointer'
-                        }}
-                        onClick={() => {
-                            navigate('/home');
-                        }}
-                    >
-                        <NavbarLogo imageSize="65" />
-                    </Box>
-
-                    {/* DESKTOP / LARGE MONITORS */}
-                    <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" }, justifyContent: 'flex-end' }}>
-                        <Slide direction="down" in={true} timeout={650}>
+                    <Box sx={{
+                        flexGrow: 1,
+                        display: { xs: "none", md: "flex" },
+                        justifyContent: 'center',
+                        position: 'fixed',
+                        top: 0,
+                        left: '50%',
+                        transform: 'translateX(-50%)',
+                        width: '100%',
+                        zIndex: 1000,
+                        bgcolor: 'rgba(0, 0, 0, .3)'
+                    }}>
+                        <Slide direction="down" in timeout={650}>
                             <div>
                                 {pages.map(page => (
                                     <Button
@@ -58,23 +46,17 @@ export default ({ setMobileNavMenuVisibility }: { setMobileNavMenuVisibility: Re
                     </Box>
 
                     {/* MOBILE / SMALL MONITORS */}
-                    <Box sx={{ flexGrow: 1, display: { xs: "flex", md: "none" }, cursor: 'pointer' }} onClick={() => {
-                        navigate('/home');
-                    }}>
-                        <NavbarLogo imageSize="75" />
-                    </Box>
-
-                    {/* MOBILE / SMALL MONITORS */}
-                    <Box sx={{ display: { xs: "flex", md: "none" } }}>
-                        <Slide direction="down" in={true} timeout={650}>
-                            <div>
+                    <Box sx={{ width: '93%', display: { xs: "flex", md: "none" }, position: 'fixed', justifyContent: 'flex-end' }}>
+                        <Slide direction="down" in timeout={650}>
+                            <div style={{ zIndex: 99999 }}>
                                 <IconButton
                                     size="large"
                                     aria-label="navigation menu"
                                     aria-haspopup="true"
                                     onClick={() => setMobileNavMenuVisibility(true)}
+                                    sx={{ bgcolor: 'rgba(0, 0, 0, .3)' }}
                                 >
-                                    <MenuIcon sx={{ fontSize: 45, color: 'var(--main_color2)' }} />
+                                    <MenuIcon sx={{ fontSize: 35, color: 'var(--main_color2)' }} />
                                 </IconButton>
                             </div>
                         </Slide>

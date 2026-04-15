@@ -7,6 +7,11 @@ import MobileNavigationMenuButton from "./MobileNavigationMenuButton";
 
 export default ({ visibilitySetter }: { visibilitySetter: React.Dispatch<React.SetStateAction<boolean>>; }) => {
     const [shouldSlide, setSlideState] = useState(true);
+    const closeNavMenu = () => {
+        setSlideState(false);
+        setTimeout(() => visibilitySetter(false), 150);
+    };
+
     return (
         <Box sx={{ width: '100%', height: '100%', position: 'absolute', zIndex: 99999, bgcolor: 'rgba(0, 0, 0, .65)' }}>
             <Box display="flex" justifyContent="flex-end">
@@ -34,16 +39,13 @@ export default ({ visibilitySetter }: { visibilitySetter: React.Dispatch<React.S
                                         color: 'var(--main_color2)',
                                         transition: '.23s'
                                     }}
-                                    onClick={() => {
-                                        setSlideState(false);
-                                        setTimeout(() => visibilitySetter(false), 150);
-                                    }}
+                                    onClick={closeNavMenu}
                                 />
                             </Box>
 
                             {/* NAV BUTTONS */}
                             {pages.map(page => (
-                                <MobileNavigationMenuButton key={page} name={page} />
+                                <MobileNavigationMenuButton key={page} name={page} onClose={closeNavMenu} />
                             ))}
                         </Container>
                     </Box>
