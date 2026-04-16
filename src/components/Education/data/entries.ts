@@ -32,7 +32,7 @@ export const educationEntries: EducationEntry[] = [
             'Foundation Scholarship'
         ]
     },
-    {
+    /*{
         name: 'North Creek High School',
         degree: 'High School Diploma',
         major: 'General Studies',
@@ -42,5 +42,5 @@ export const educationEntries: EducationEntry[] = [
             'Introduction to Computer Science Principles',
             'Web Design'
         ]
-    }
+    }*/
 ];

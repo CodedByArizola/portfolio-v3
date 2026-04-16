@@ -15,7 +15,7 @@ export default ({ name, mobile }: { name: string; mobile?: boolean; }) => {
                 mr: 1,
                 mb: mobile ? 1 : 0,
                 fontFamily: 'Open Sans',
-                fontSize: 15,
+                fontSize: 13.5,
                 textAlign: 'center',
                 color: 'var(--main_color2)',
                 border: 1,
