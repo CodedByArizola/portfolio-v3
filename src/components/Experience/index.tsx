@@ -12,7 +12,7 @@ export default () => {
 
     // RETURN ELEMENT
     return (
-        <Box id="education" component="section">
+        <Box id="experience" component="section">
             <ReactVisibilitySensor partialVisibility onChange={(isVisible: boolean) => setContainerVisibility(isVisible)}>
                 <Fade in={showContainer} timeout={1000}>
                     <Container maxWidth="xl" sx={{ minHeight: '99vh', py: 5 }}>
