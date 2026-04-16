@@ -5,6 +5,7 @@ import AboutMe from "../components/AboutMe";
 import Projects from "../components/Projects";
 import Contact from "../components/Contact";
 import Education from "../components/Education";
+import Experience from "../components/Experience";
 
 import Introduction from "../components/Introduction";
 import Footer from "../components/Footer";
@@ -24,6 +25,7 @@ export default () => {
                 <Introduction showNameAndTitle={showNameAndTitle} />
                 <AboutMe />
                 <Education />
+                <Experience />
                 <Projects />
                 <Contact />
             </Box>

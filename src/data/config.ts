@@ -1,6 +1,6 @@
 import { SoftwareProject } from "../interfaces";
 
-export const pages: string[] = ['About', 'Education', 'Projects', 'Contact'];
+export const pages = ['About', 'Education', 'Experience', 'Projects', 'Contact'];
 export const contactAPIRoute = 'https://api.web3forms.com/submit';
 
 // SOCIAL MEDIA LINKS
