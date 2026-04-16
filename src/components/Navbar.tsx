@@ -1,8 +1,27 @@
+import { useEffect, useState } from "react";
 import { AppBar, Container, Toolbar, Box, IconButton, Button, Slide } from "@mui/material";
 import { pages } from "../data/config";
 import MenuIcon from "@mui/icons-material/Menu";
 
 export default ({ setMobileNavMenuVisibility }: { setMobileNavMenuVisibility: React.Dispatch<React.SetStateAction<boolean>> }) => {
+    const [activeSection, setActiveSection] = useState('');
+
+    // OBSERVOR FOR WHICH SECTION IS IN VIEW BY THE CLIENT
+    useEffect(() => {
+        const sections = document.querySelectorAll('section');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                console.log(entry.isIntersecting, entry.target.id);
+                if (entry.isIntersecting) {
+                    setActiveSection(entry.target.id);
+                }
+            });
+        }, { threshold: 0.6 });
+
+        sections.forEach(section => observer.observe(section));
+        return () => observer.disconnect();
+    }, []);
+
     return (
         <AppBar sx={{ py: 2, boxShadow: 'none', bgcolor: 'none', background: 'none' }} position="static">
             <Container maxWidth="xl">
@@ -35,7 +54,7 @@ export default ({ setMobileNavMenuVisibility }: { setMobileNavMenuVisibility: Re
                                             fontFamily: 'purista-web',
                                             fontSize: 19,
                                             textTransform: 'none',
-                                            color: "white"
+                                            color: activeSection === page.toLowerCase() ? 'var(--main_color2)' : 'white'
                                         }}
                                     >
                                         {page}
