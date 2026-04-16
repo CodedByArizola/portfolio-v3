@@ -18,8 +18,10 @@ export default ({ data }: { data: ExperienceEntry }) => {
                 </Typography>
 
                 <Box component="ul" sx={{ fontSize: 16.5, fontFamily: 'purista-web', color: 'rgba(255, 255, 255, .9)' }}>
-                    {data.responsibilities.map(responsibility => (
-                        <Box component="li" sx={{ '::marker': { color: 'var(--main_color2)' }, mb: 1 }}>{responsibility}</Box>
+                    {data.responsibilities.map((responsibility, index) => (
+                        <Box key={index} component="li" sx={{ '::marker': { color: 'var(--main_color2)' }, mb: 1 }}>
+                            {responsibility}
+                        </Box>
                     ))}
                 </Box>
             </Box>
