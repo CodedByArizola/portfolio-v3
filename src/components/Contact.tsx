@@ -14,8 +14,8 @@ import Socials from "./Socials";
 let onCooldown = false;
 
 export default () => {
-    let alertClearingTimeout: number;
-    let cooldownAlertClearingTimeout: number;
+    let alertClearingTimeout: any;
+    let cooldownAlertClearingTimeout: any;
 
     // STATES
     const [showContainer, setContainerVisibility] = useState(false);
