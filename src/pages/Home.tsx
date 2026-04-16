@@ -19,18 +19,16 @@ export default () => {
     }, []);
 
     // RETURN ELEMENT
-    return (
-        <>
-            <Box component="main">
-                <Introduction showNameAndTitle={showNameAndTitle} />
-                <AboutMe />
-                <Education />
-                <Experience />
-                <Projects />
-                <Contact />
-            </Box>
+    return (<>
+        <Box component="main">
+            <Introduction showNameAndTitle={showNameAndTitle} />
+            <AboutMe />
+            <Education />
+            <Experience />
+            <Projects />
+            <Contact />
+        </Box>
 
-            <Footer />
-        </>
-    )
+        <Footer />
+    </>)
 }
