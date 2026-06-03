@@ -22,14 +22,6 @@ export default ({ data, mobile }: { data: EducationEntry, mobile?: boolean }) =>
                 {/* <Divider sx={{ my: 2 }} /> */}
             </Box>
 
-            {/* <Typography sx={{ fontSize: 17, fontFamily: 'purista-web' }}>
-                Relevant Coursework
-            </Typography>
-
-            <Box sx={schoolCurricularsStyle}>
-                {data.relevantCourses.map(course => (<Chip key={course} name={course} mobile />))}
-            </Box> */}
-
             {(data.awards && data.awards.length > 0) && (<>
                 <Divider sx={{ my: 2 }} />
                 <Typography sx={{ fontSize: 17, fontFamily: 'purista-web' }}>

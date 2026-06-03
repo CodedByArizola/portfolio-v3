@@ -3,6 +3,5 @@ export interface EducationEntry {
     degree: string;
     major: string;
     duration: string;
-    relevantCourses: string[];
     awards?: string[];
 };
