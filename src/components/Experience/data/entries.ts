@@ -13,4 +13,14 @@ export const experienceEntries: ExperienceEntry[] = [
             'Managed CI/CD workflows and version control using Git/GitHub and tracked agile tasks via Jira.'
         ]
     },
+    {
+        title: 'Developer',
+        company: 'Evol PC Gaming',
+        duration: 'December 2019 - November 2021',
+        responsibilities: [
+            'Served on an 8-person FiveM server development team, implementing new features, resolving bugs, and maintaining core gameplay systems.',
+            'Contributed to a large-scale framework redevelopment project, optimizing Lua-based server systems and reducing runtime execution overhead from ~0.30ms to under 0.07ms per resource.',
+            'Modernized user interface systems by transitioning from Lua-rendered menus to HTML/jQuery/CSS-based NUI solutions, improving usability, maintainability, and visual consistency.'
+        ]
+    },
 ];
