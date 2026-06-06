@@ -3,7 +3,7 @@ import { ExperienceEntry } from "../interfaces";
 export const experienceEntries: ExperienceEntry[] = [
     {
         title: 'Lead Developer',
-        company: 'Multiplayer Platform (FiveM)',
+        company: 'Production Roleplay Community',
         duration: 'November 2021 - May 2025',
         responsibilities: [
             'Architected and implemented scalable backend systems in Lua and TypeScript, supporting 225+ concurrent users with secure SQL integrations.',
