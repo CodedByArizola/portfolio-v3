@@ -14,13 +14,24 @@ export const experienceEntries: ExperienceEntry[] = [
         ]
     },
     {
-        title: 'Developer',
+        title: 'Lead Developer',
         company: 'Evol PC Gaming',
-        duration: 'December 2019 - November 2021',
+        duration: 'July 2021 - November 2021',
+        responsibilities: [
+            'Contributed to a large-scale framework redevelopment project, optimizing Lua-based server systems and reducing runtime execution overhead from ~0.30ms to under 0.07ms per resource.',
+            'Configured and maintained remote development environments using PuTTY and WinSCP, enabling developers to securely access Linux-based servers, deploy code, and test features in a consistent environment.',
+            'Modernized user interface systems by transitioning from Lua-rendered menus to HTML/jQuery/CSS-based NUI solutions, improving performance, maintainability, and visual consistency.',
+            'Participated in code reviews, testing, and deployment processes, helping maintain a stable development pipeline and minimize production issues.'
+        ]
+    },
+    {
+        title: 'Junior Developer',
+        company: 'Evol PC Gaming',
+        duration: 'December 2019 - July 2021',
         responsibilities: [
             'Served on an 8-person FiveM server development team, implementing new features, resolving bugs, and maintaining core gameplay systems.',
-            'Contributed to a large-scale framework redevelopment project, optimizing Lua-based server systems and reducing runtime execution overhead from ~0.30ms to under 0.07ms per resource.',
-            'Modernized user interface systems by transitioning from Lua-rendered menus to HTML/jQuery/CSS-based NUI solutions, improving usability, maintainability, and visual consistency.'
+            'Designed internal debugging and monitoring tools that reduced incident investigation time from hours to minutes, enabling faster identification of malicious activity and gameplay issues.',
+            'Developed and deployed 15+ gameplay features and quality-of-life improvements, enhancing player engagement and server functionality.'
         ]
     },
 ];
