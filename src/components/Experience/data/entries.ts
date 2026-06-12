@@ -2,7 +2,7 @@ import { ExperienceEntry } from "../interfaces";
 
 export const experienceEntries: ExperienceEntry[] = [
     {
-        title: 'Lead Developer',
+        title: 'Founder & Lead Developer',
         company: 'Production Roleplay Community',
         duration: 'November 2021 - May 2025',
         responsibilities: [
