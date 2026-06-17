@@ -11,7 +11,7 @@ export default ({ setMobileNavMenuVisibility }: { setMobileNavMenuVisibility: Re
         const sections = document.querySelectorAll('section');
         const observer = new IntersectionObserver(entries => {
             entries.forEach(entry => {
-                console.log(entry.isIntersecting, entry.target.id);
+                //console.log(entry.isIntersecting, entry.target.id);
                 if (entry.isIntersecting) {
                     setActiveSection(entry.target.id);
                 }
