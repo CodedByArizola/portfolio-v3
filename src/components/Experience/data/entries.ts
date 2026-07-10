@@ -25,7 +25,7 @@ export const experienceEntries: ExperienceEntry[] = [
         ],
         pastRoles: [
             {
-                title: 'Junior Developer',
+                title: 'Junior Backend Developer',
                 duration: 'December 2019 - July 2021',
                 responsibilities: [
                     'Served on an 8-person FiveM server development team, implementing new features, resolving bugs, and maintaining core gameplay systems.',
