@@ -81,7 +81,8 @@ export const listOfProjects: SoftwareProject[] = [
         image: 'roleplay-community-website.webp',
         featured: true,
         toolsUsed: ['React.js', 'Material UI', 'TypeScript', 'Vite', 'Sass'],
-        siteLink: 'https://prpwebsite-v2.netlify.app/'
+        siteLink: 'https://prpwebsite-v2.netlify.app/',
+        githubLink: 'https://github.com/CodedByArizola/roleplay-community-website'
     },
     {
         title: 'Personal Portfolio',

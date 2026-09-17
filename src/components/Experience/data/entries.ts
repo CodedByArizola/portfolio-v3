@@ -2,6 +2,17 @@ import { ExperienceEntry } from "../interfaces";
 
 export const experienceEntries: ExperienceEntry[] = [
     {
+        title: 'Volunteer Developer',
+        company: 'Next Wave Dev',
+        duration: 'June 2026 - Present',
+        responsibilities: [
+            'Contributed to the development, maintenance, and improvement of web applications, websites, or internal tools.',
+            'Assisted with debugging, testing, and optimizing existing codebases.',
+            'Collaborated with other volunteers or staff using version control, code reviews, and documentation.'
+        ],
+        link: 'https://nextwavedev.org/'
+    },
+    {
         title: 'Founder & Lead Developer',
         company: 'Production Roleplay Community',
         duration: 'November 2021 - May 2025',
@@ -11,7 +22,8 @@ export const experienceEntries: ExperienceEntry[] = [
             'Built responsive and accessible React-based UIs using TypeScript and Sass, improving user experience and reducing support issues.',
             'Led code reviews and mentored fellow developers, improving code quality and deployment stability.',
             'Managed CI/CD workflows and version control using Git/GitHub and tracked agile tasks via Jira.'
-        ]
+        ],
+        link: 'https://prpwebsite-v2.netlify.app/'
     },
     {
         title: 'Lead Developer',

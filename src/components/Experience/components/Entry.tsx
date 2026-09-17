@@ -1,6 +1,9 @@
-import { Box, Typography } from "@mui/material"
+import { Box, IconButton, Typography } from "@mui/material"
 import { ExperienceEntry } from "../interfaces"
+
 import StraightIcon from '@mui/icons-material/Straight';
+import OpenInNewIcon from '@mui/icons-material/OpenInNew';
+import { viewingButtonStyling } from "../../../styles/styles";
 
 const Role = ({ title, duration, responsibilities }: { title: string; duration: string; responsibilities: string[]; }) => {
     return (<>
@@ -26,9 +29,19 @@ export default ({ data }: { data: ExperienceEntry }) => {
     return (
         <Box sx={{ mb: 2, p: 3, color: 'white', bgcolor: 'var(--main_color4)', borderRadius: 2, display: 'flex', flexDirection: 'column' }}>
             <Box sx={{ color: 'white', display: 'flex', flexDirection: 'column' }}>
-                <Typography sx={{ fontSize: 21, fontFamily: 'purista-web' }}>
-                    {data.company}
-                </Typography>
+                <div style={{ display: 'flex', justifyContent: 'space-between' }}>
+                    <Typography sx={{ fontSize: 21, fontFamily: 'purista-web' }}>
+                        {data.company}
+                    </Typography>
+
+                    {typeof data.link === 'string' && <>
+                        <Box sx={{ display: { xs: "none", md: "flex" }, flexDirection: 'column' }}>
+                            <IconButton href={data.link} target="_blank">
+                                <OpenInNewIcon sx={viewingButtonStyling} />
+                            </IconButton>
+                        </Box>
+                    </>}
+                </div>
 
                 <Role title={data.title} duration={data.duration} responsibilities={data.responsibilities} />
             </Box>
@@ -42,6 +55,14 @@ export default ({ data }: { data: ExperienceEntry }) => {
                     <Role title={pastRole.title} duration={pastRole.duration} responsibilities={pastRole.responsibilities} />
                 </div>
             ))}
+
+            {typeof data.link === 'string' && <>
+                <Box sx={{ display: { xs: "flex", md: "none" } }}>
+                    <IconButton href={data.link} target="_blank">
+                        <OpenInNewIcon sx={viewingButtonStyling} />
+                    </IconButton>
+                </Box>
+            </>}
         </Box>
     )
 }

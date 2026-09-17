@@ -6,4 +6,5 @@ export interface ExperienceEntry {
     duration: string;
     responsibilities: string[];
     pastRoles?: ExperienceWithoutCompany[];
+    link?: string;
 };
